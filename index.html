@@ -1,49 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
-    
-<div>
-    <div>
-        <label for=""><h3>Ingrese los metros cuadrados a construir de pared</h3></label>
-    </div>    
-    <div>
-        <input type="text" id="M2">
-    </div>
-    <div>
-        <label for=""><h3>Seleccione el Tipo de Ladrillo</h3></label>    
-        <select name="ladrillo" id="ladrillo">
-            <option value="0" selected="selected">...</option>
-            <option value="1">Ladrillo Hueco 8*18*33</option>
-            <option value="2">Ladrillo Hueco 12*18*33</option>
-            <option value="3">Ladrillo Hueco 18*18*33</option>
-            <option value="4">Ladrillo Común 25x12x5</option>
-        </select>
-    </div>
-    <div>
-        <label for=""><h3>Seleccione el Tipo de Mezcla</h3></label>
-    </div>
-    <div>
-        <select name="mezclaMampo" id="MMP">
-            <option value="0" selected="selected">...</option>
-            <option value="1">Mezcla Tradicional</option>
-            <option value="2">Cemento de Albañileria</option>
-            <option value="3">Mortero Preparado</option>
-        </select>
-    </div>
-    <div><button class="" id="botonCalcular">Calcular</button></div>
-<div>
+    <header>
+        <button type="button" data-theme-toggle aria-label="Change to light theme">Change to light theme</button>
+    </header>
+    <main>
+        <div>
+            <div>
+                <label for="">
+                    <h3>Ingrese los metros cuadrados a construir de pared</h3>
+                </label>
+            </div>
+            <div>
+                <input type="text" id="M2">
+            </div>
+            <div>
+                <label for="">
+                    <h3>Seleccione el Tipo de Ladrillo</h3>
+                </label>
+                <select name="ladrillo" id="ladrillo">
+                    <option value="0" selected="selected">...</option>
+                    <option value="1">Ladrillo Hueco 8*18*33</option>
+                    <option value="2">Ladrillo Hueco 12*18*33</option>
+                    <option value="3">Ladrillo Hueco 18*18*33</option>
+                    <option value="4">Ladrillo Común 25x12x5</option>
+                </select>
+            </div>
+            <div>
+                <label for="">
+                    <h3>Seleccione el Tipo de Mezcla</h3>
+                </label>
+            </div>
+            <div>
+                <select name="mezclaMampo" id="MMP">
+                    <option value="0" selected="selected">...</option>
+                    <option value="1">Mezcla Tradicional</option>
+                    <option value="2">Cemento de Albañileria</option>
+                    <option value="3">Mortero Preparado</option>
+                </select>
+            </div>
+            <div><button class="" id="botonCalcular">Calcular</button></div>
+            <div>
+    </main>
 
 
 
 
-
-
+    <script src="./codStyle.js"></script>
     <script src="./codigo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+
 </html>
