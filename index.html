@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" href="./img/logo - copia.jpeg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
@@ -12,35 +13,122 @@
 </head>
 
 <body>
-    <header >
+    <header style=>
         <nav>
-            <ul class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <ul class="d-flex gap-2 d-md-flex justify-content-md-start">
                 <ul>Home</ul>
                 <ul>Sobre Nosotros</ul>
                 <ul>Productos</ul>
                 <ul>Carrito de Compras</ul>
                 <ul>Calculadora</ul>
             </ul>
+            <div class="d-flex gap-2 d-md-flex align-item-start justify-content-md-end">
+                <a id="mode" class="btn btn-outline-secondary me-md-2" href="#">Dark Mode</a>
+                <div id="principal"></div>
+                <div id="secundario"></div>
+            </div>
         </nav>
-        <div class="d-grid gap-0 d-md-flex justify-content-md-end">
-            <a id="mode" class="btn btn-outline-secondary me-md-2" href="#">Dark Mode</a>
-            <div id="principal"></div>
-            <div id="secundario"></div>
-        </div>
-
 
     </header>
     <main>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/promo 01.jpeg" class="d-block w-100" alt="promo 01">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/promo 02.jpeg" class="d-block w-100" alt="promo 02">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/promo 03.jpeg" class="d-block w-100" alt="promo 03">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/promo 04.jpeg" class="d-block w-100" alt="promo 04">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/promo 05.jpeg" class="d-block w-100" alt="promo 05">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 cardsss">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/promo card 01.jpeg" class="card-img-top" alt="promo card 01">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./img/promo card 02.jpeg" class="card-img-top" alt="promo card 02">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-50">
+                    <img src="./img/promo card 03.jpeg" class="card-img-top" alt="promo card 03">
+                </div>
+            </div>
+        </div>
+        <h5>Productos por categoria</h5>
         <div>
-            <div>
-                <label for="">
+            <button id="constrIndex" class="btn btn-danger"> Construcción</button>
+            <button id="En seco" class="btn btn-danger">Steel Frame</button>
+        </div>
+        
+<section id="misprods" class="row">
+
+</section>
+<section>
+    <h4>Tu Carrito</h4>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody id="tablabody">
+          <!-- aqui tabla carrito -->
+        </tbody>
+      </table>
+      <h4 id="total">Total a pagar $:</h4>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div>
+            <div> -->
+        <!-- <label for="">
                     <h3>Ingrese los metros cuadrados a construir de pared</h3>
                 </label>
             </div>
             <div>
                 <input type="number" id="m2">
-            </div>
-            <!-- <div>
+            </div> -->
+        <!-- <div>
                 <label for="">
                     <h3>Seleccione el Tipo de Ladrillo</h3>
                 </label>
@@ -64,25 +152,60 @@
                     <option value="2">Cemento de Albañileria</option>
                     <option value="3">Mortero Preparado</option>
                 </select> -->
-        </div>
+        <!-- </div>
         <div><button class="btn" id="botonCalcular" onclick="calcula()" ondblclick="result()">Calcular</button></div>
         <div>
 
-            <div id="aaa" class="caja1">
+            <div id="aaa" class="caja1"> -->
 
 
 
-            </div>
+        <!-- </div> -->
     </main>
 
+    <footer>
+        <div class="d-grid gap-2 justify-content">
+            <div>
+                <h6>Institucional</h6>
+                <p><a href="">Sobre Nosotros</a></p>
+                <p><a href="">Sucursales</a></p>
+            </div>
+            <div>
+                <h6>Ayuda</h6>
+                <p>Preguntas Frecuentes</p>
+                <p>Financiación</p>
+                <p>Medios de Pago</p>
+                <p>Metodos de Envio</p>
+            </div>
+            <div>
+                <h6>Contacto</h6>
+                <p>contacto@homebuild.com</p>
+                <p id="tel">0810-222-6966</p>
+            </div>
+            <div class="d-grid">
+                <h6>Unete a nuestro newsletter</h6>
+                <input type="text" placeholder="Nombre y Apellido">
+                <input type="email" placeholder="Correo Electronico">
+                <button id="newsletter" class="btn btn-danger">Enviar</button>
+            </div>
+        </div>
 
 
 
-    <script src="./codStyle.js"></script>
-    <script src="./codigo.js"></script>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="./codLibrerias.js"></script>
+    <script src="./codStyle.js"></script>
+    <script src="./codigo.js"></script>
+    
 </body>
 
 </html>
+
+
+
+
