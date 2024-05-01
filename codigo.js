@@ -1,3 +1,5 @@
+console.table(productos);
+let carrito = [];
 const contenedorProds = document.getElementById('misprods');
 const tablaBody = document.getElementById('tablabody');
 const botonFinalizar = document.getElementById('finalizarBtn');
@@ -54,7 +56,7 @@ function agregarACarrito(producto) {
         <td>${producto.precio}</td>
     </tr>
     `
-    //agregar calculo de total
+
     let totalAcumulado = carrito.reduce((acum, prod) => acum + prod.precio, 0);
     document.getElementById('total').innerText = 'Total a pagar $: ' + totalAcumulado;
 }
