@@ -57,7 +57,7 @@ function agregarACarrito(producto) {
     </tr>
     `
 
-    let totalAcumulado = carrito.reduce((acum, prod) => acum + prod.precio,0);
+    let totalAcumulado = carrito.reduce((acum, producto) => acum + producto.precio,0);
     document.getElementById('total').innerText = 'Total a pagar $: ' + totalAcumulado;
 }
 
